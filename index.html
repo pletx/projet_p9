@@ -10,16 +10,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<div itemscope itemtype="http://schema.org/LocalBusiness">
-		<h1 itemprop="name">Nom de l'entreprise</h1>
-		<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-		  <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
-		  <span itemprop="addressLocality">Bordeaux</span>
-		  <span itemprop="addressRegion">Nouvelle-Aquitaine</span>
-		  <span itemprop="postalCode">33200</span>
-		</div>
-		<div itemprop="telephone">05 56 67 78 89</div>
-	  </div>
 </head>
 <body>
 	<header class="top-header">
@@ -174,12 +164,21 @@
 	<script src="assets/scripts.js"></script>
 	<script type="application/ld+json">
 		{
-		  "@context": "https://schema.org",
-		  "@type": "WebSite",
-		  "name": "Nina Carducci",
-		  "url": "https://ninacarducci.github.io/",
-		  "sameAs": ["https://www.instagram.com/ninacarducci.photo"]
-		}
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "Nina Carducci",
+			"url": "https://ninacarducci.github.io/",
+			"sameAs": ["https://www.instagram.com/ninacarducci.photo"]
+			"address": {
+			  "@type": "PostalAddress",
+			  "streetAddress": "68 avenue Alsace-Lorraine",
+			  "addressLocality": "Bordeaux",
+			  "postalCode": "33200",
+			  "addressCountry": "Pays"
+			},
+			"telephone": "05 56 67 78 89"
+		  
+		  }
 		</script>
 </body>
 
